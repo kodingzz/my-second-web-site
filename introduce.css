@@ -1,0 +1,492 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style-type: none;
+}
+.container{
+    width: 1140px;
+    margin: 0 auto;
+}
+
+
+header{
+    position: fixed;
+    color: white;
+    background-color: transparent;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    padding: 15px;
+    border-bottom: 1px solid white;
+    
+}
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+}
+header button{
+    color: white;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+header h1 button{
+    font: size 1.5rem;;
+    font-weight: bold;
+    margin-bottom: 10px;
+    
+}
+header  nav ul{
+    display: flex;
+}
+header a{
+    text-decoration: none;
+    color: white;
+}
+
+header  nav ul li{
+    padding: 10px;
+ 
+}
+header  nav ul li button{
+    font-size: 1rem;
+    
+}
+header  button{
+    border: none;
+    background-color: transparent;
+}
+
+
+main{
+    width: 100%;
+    height: 100vh;
+    color: white;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    text-align: center;
+}
+
+main h3 {
+    font-size: 2rem;
+}
+main h2 {
+    font-size: 3rem;
+    margin: 40px 0 ;
+    font-family: "Varela Round", sans-serif;
+}
+main p {
+    margin-bottom: 50px;
+}
+main .download{
+   background-color: transparent;
+   border: 3px solid white;
+   color: white;
+   border-radius: 20px;
+   padding: 15px;
+ 
+   cursor: pointer;
+}
+main .mouse{
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 1.3rem;
+  position: absolute;
+  bottom: 140px;
+  left: 50%;
+  cursor: pointer;
+  transform: translateX(-50%);
+  animation:  upDown 1s ease-in-out infinite;
+
+ }
+ 
+ @keyframes upDown {
+    0%{
+        bottom: 140px;
+    }
+    50%{
+        bottom: 160px;
+    }
+    100%{
+        bottom: 140px;
+    }
+    
+ }
+ main h2::after{
+    content: "";
+    width: 3px;
+    height: 35px;
+    background-color: #fff;
+    margin-left: 5px;
+    display: inline-block;
+    animation: blink 0.7s ease-in-out infinite;
+    
+ }
+ @keyframes blink{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+ }
+
+ body{
+    color: white;
+    background-color: black;
+ }
+ 
+ section{
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin-top: 100px;
+ }
+    /* about.html cc */
+    section .about-title{
+        width: 30%;
+        margin-bottom: 2rem;
+    }
+    section .about-title h3{
+        color: red;
+        margin-bottom: 10px;
+    }
+    section .about-title h1{
+        font-size: 2rem;
+        padding: 3px;
+        font-weight: bold;
+    }
+
+    section .about-main  .left{
+      width: 50%;
+      float: left;
+    }
+    section .about-main .left img{
+        /* max-width: 100%; */
+        height: 500px;
+        width: 100%;
+
+    }
+
+      section .about-main  .right{
+      width: 50%;
+    
+      float: left;
+      padding: 0 20px;
+    }
+    section .about-main  .right h2{
+        margin-bottom: 20px;
+      }
+    section .about-main  .right span{
+        color: red;
+        font-weight: bold;
+      }
+    
+      section .about-main .right .social{
+        margin-top: 20px;
+
+      }
+      section .about-main .right .social a{
+        color: white;
+        font-size: 2rem;
+        margin-right: 15px; 
+
+      }
+
+      /* features.html css */
+      .features-main::after{
+        content: "";
+        display: block;
+        clear: both;
+      }
+      .features-main{
+
+      }
+      .features-main .icon i {
+        font-size: 2.5rem;
+       
+
+      }
+      .features-main strong{
+        font-size: 2rem;
+        margin: 1rem 0  ;
+    
+      }
+      .features-main .content p{
+        font-size: 1.15rem;
+    
+      }
+    
+      .features-main .features-inner{
+        width: 30%;
+        padding: 2rem;
+        float: left;
+        align-items: center;
+        justify-content: center;
+        margin-right: 5%;
+      }
+      .features-main .features-inner:last-child{
+  
+        margin-right: 0;
+      }
+      .features-main .features-inner:hover{
+        background-color: lightcoral;
+        
+
+      }
+ 
+      .features-main .features-inner:hover i{
+        color: blue;
+
+
+      }
+
+      .bg{
+        background: url(img/flower.png) center center;
+        background-size: cover;
+        background-attachment: fixed;
+        height: 94px;
+      }
+  
+    
+      /* portfolio css */
+      .portfolio-main{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        row-gap: 15px;
+        column-gap: 50px;
+
+
+      }
+      .portfolio-main div{
+        height: 300px;
+       border: 3px solid red;
+        background-color: white;
+        color: black;
+        padding: 10PX;
+        
+       
+      }
+     
+      .portfolio-main div h5{
+        color: red;
+        margin: 5px 0;
+      }
+      .portfolio-main div span{
+        font-size: 1.2rem;
+        font-weight: bold;
+      }
+
+  
+      .portfolio-main img{
+        width: 100%;
+        height: 200px;
+       
+        
+      }
+
+      /* contact css */
+      .contact-me .left{
+        width: 30%;
+        float: left;
+      }
+      .contact-me .left> div{
+        display: flex;
+        border: 2px solid white;
+        align-items: center;
+        margin-bottom: 20px;
+        padding: 10px;
+
+      }
+      .contact-me .left> div .icon {
+        padding: 10px;
+        padding-right: 20px;
+      }
+      .contact-me .left> div .info {
+        font-size: 0.8rem;
+      }
+      .contact-me .right{
+        width: 65%;
+        float: left;
+        margin-left: 5%;
+        border: 2px solid white;
+        padding: 13px;
+        margin-bottom: 30px;
+      }
+      
+      .contact-me .right form div{
+      
+       margin-top: 10px;
+
+      }
+      .contact-me .right form div  label{
+        display: block;
+        margin-bottom: 15px;
+       }
+       .contact-me .right form div  input{
+        width: 100%;
+        border-radius: 5px;
+        border: 3px solid white;
+        padding: 5px;
+       }
+       .contact-me .right form div input:hover{
+        border: 3px solid blue;
+        box-shadow: 0 0 10px #719ece;
+       }
+       .contact-me .right form div  textarea{
+        width: 100%;
+        height: 200px;
+        border-radius: 5px;
+        border: 3px solid white;
+        padding: 5px;
+       }
+       .contact-me .right form div  textarea:hover{
+        border: 3px solid blue;
+        box-shadow: 0 0 10px #719ece;
+        outline: none;
+       }
+       .contact-me .right form div:last-child input{
+        background-color: coral;
+        width: 100%;
+        color: white;
+        border:none;
+        border-radius: 0;
+        padding: 10px 0;
+        
+       }
+
+       /* 반응형 웹 */
+
+       @media screen and (max-width:1140px) {
+       main .container{
+        width: 992px;
+       }
+       section .container{
+        width: 600px;
+       }
+
+       section .about-main .left{
+        width: 100%;
+        margin-bottom: 1.5rem;
+       }
+       section .about-main .right{
+        width: 100%;
+        padding: 0;
+        margin-bottom: 2  rem;
+       }
+       section  .features-main .features-inner {
+        width: 48%;
+        margin-right: 0;
+        margin-bottom: 1.5rem;
+       }
+       section .features-inne:nth-child(2n+1) {
+        margin-right: 4%;
+       }
+
+       .portfolio-main{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+
+      }
+      .contact-me .left{
+       width: 100%;
+      }
+       section .about-title{
+        width: 100%;
+      }
+
+      .contact-me .right{
+        width: 100%;
+        margin-left: 0;
+        
+      }
+      
+
+
+       }
+       @media screen and (max-width:992px) {
+        html{
+          font-size: 14px;
+
+        }
+        main .container{
+          width: 768px;
+        }
+       
+       }
+       @media screen and (max-size:768px) {
+        html{
+          font-size: 13px;
+
+        }
+        main .container{
+          width: 576px;      
+        }
+        section .container{
+          width: 400px;
+        }
+      
+       }
+
+     
+       @media screen and (max-width:576px) {
+        html{
+          font-size: 12px;
+
+        }
+        main .container{
+          width: 400px;      
+        }
+        section .container{
+          width: 360px;
+        }
+        section  .features-main .features-inner{
+          width: 80%;
+          margin-right: 0;
+        }
+        .portfolio-main{
+          grid-template-columns: 300px;
+          grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+          justify-content: center;
+  
+        }
+       }
+       @media screen and (max-width:400px) {
+        html{
+          font-size: 11px;
+
+        }
+        main .container{
+          width: 320px;      
+        }
+        section .container{
+          width: 320px;
+        }
+       }
+
+       /* js 용도로 쓰이는 css */
+       header.active{
+        background-color: green;
+        animation:fadeIn 0.5s ease-in-out ;
+       }
+
+       @keyframes fadeIn{
+        0%{
+          opacity: 1;
+        }
+        100%{
+          opacity: 0;
+        }
+       }
